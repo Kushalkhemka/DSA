@@ -54,6 +54,10 @@ class LinkedList {
     }
 
     insert(index,value){
+        if(index===0){
+            this.prepend(value);
+            return;
+        }
         let prevNode=this.head;
         for(let i=0;i<index-1;i++){ //2
             prevNode=prevNode.next;
@@ -71,7 +75,7 @@ let myLinkedList = new LinkedList(10);
 myLinkedList.append(5);
 myLinkedList.append(16);
 myLinkedList.prepend(2);
-myLinkedList.insert(2,8);
+myLinkedList.insert(0,8);
 console.log(myLinkedList.printList());
 
 
