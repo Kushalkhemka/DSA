@@ -1,4 +1,4 @@
-Vclass Node {
+class Node {
     constructor(value) {
         this.value = value;
         this.left = null;
@@ -222,8 +222,8 @@ console.log(tree.lookup(20)); // true
 console.log(tree.lookup(99)); // false
 console.log(tree.lookup(20)); // false
 console.log(tree.Breadth_First_Search());
-console.log(tree.Breadth_First_Search_R());
-console.log(tree.DFS_InOrder())
-console.log(tree.DFS_PreOrder())
-console.log(tree.DFS_PostOrder())
+// console.log(tree.Breadth_First_Search_R());
+// console.log(tree.DFS_InOrder())
+// console.log(tree.DFS_PreOrder())
+// console.log(tree.DFS_PostOrder())
 

@@ -36,29 +36,20 @@ class BinarySearchTree {
             }
         }
     }
-    lookup(value){
-        else{
-            let currentNode = this.root;
-            while(currentNode){
-                if(value<currentNode.value){
-                    if(!currentNode.left){
-                        return false;
-                    }
-                    currentNode = currentNode.left;
-                }
-                else if(value===currentNode.value){
-                    return true;
-                }
-                else{
-                    if(!currentNode.right){
-                        return false;
-                    }
-                    currentNode=currentNode.right;
-                }
 
+    lookup(value) {
+        if (!this.root) return false;  // Early exit if the tree is empty
+        let currentNode = this.root;
+        while (currentNode) {
+            if (value < currentNode.value) {
+                currentNode = currentNode.left;
+            } else if (value === currentNode.value) {
+                return true;
+            } else {
+                currentNode = currentNode.right;
             }
         }
-
+        return false;  // Return false if the value is not found
     }
 }
 
