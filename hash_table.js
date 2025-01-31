@@ -16,7 +16,7 @@ class HashTable {
         let address = this._hash(key);
         if (!this.data[address]) {
             this.data[address] = [];
-        }
+        }ct
         this.data[address].push([key, value]);
         return this.data;
     }

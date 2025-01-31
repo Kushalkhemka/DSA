@@ -30,8 +30,9 @@ class BinarySearchTree {
                         currentNode.right=newNode;
                         return this;
                     }
+                    currentNode=currentNode.right;
                 }
-                currentNode=currentNode.right;
+
             }
         }
     }
